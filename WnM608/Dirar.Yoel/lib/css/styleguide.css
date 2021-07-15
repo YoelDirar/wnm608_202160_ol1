@@ -21,7 +21,7 @@
 
 	--font-serif: "Georgia", "Times New Roman", "serif";
 	--font-san-serif: "Hind","Bebas Neue,sans-serif";
-	--font-title: "Bebas Neue";
+	
 	
 }
 
@@ -31,20 +31,20 @@
 body{
 	margin:0;
 	font-size: 100%;
-	font-family:var(--font-san-serif)
-}
+	font-family: var(--font-san-serif)
+}	
 
 h1,
 h2,
 h3, 
 h4, 
 h5, 
-h6, {
-	font-family:var(--font-title)
+h6
+ {
+	font-family: "Bebas Neue";
+	}
 
-}
 
-}
 
 a{
 	color: inherit;
@@ -420,7 +420,7 @@ color: inherit;
 }
 
 .form-select::after{
-	content: '▾';
+	content: 'â–¾';
 	font-family:var(--font-serif);
 	font-size: 1.2em;
 	position: absolute;
@@ -455,6 +455,20 @@ color: inherit;
 .toggle input:checked +label::after{
 	transform: translateX(1em);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,2 +1,7 @@
-# wnm608_202160_ol1
-Web Tech 2 Summer 2021
+# Yoel Dirar 		
+##Relevant Links
+https://yoeldirar.com
+https://yoeldirar.com/aau/WnM608/Dirar.Yoel
+https://yoeldirar.com/aau/WnM608/Dirar.Yoel/styleguide/styleguide.html
+https://yoeldirar.com/aau/WnM608/Dirar.Yoel/notes/reading_data.php
+https://yoeldirar.com/aau/WnM608/Dirar.Yoel/admin/users.php

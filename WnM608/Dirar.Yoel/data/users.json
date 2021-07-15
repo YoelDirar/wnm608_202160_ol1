@@ -1,0 +1,35 @@
+[
+	
+	{
+		"name": "Yoel", 
+		"type": "Student", 
+		"email": "yoeldirar@gmail.com", 
+		"classes": [605,608]
+	 },
+	 	{
+		"name": "jhon", 
+		"type": "Student", 
+		"email": "yoeldirar@gmail.com", 
+		"classes": [605,608]
+	 },
+	 	{
+		"name": "Sam", 
+		"type": "Student", 
+		"email": "yoeldirar@gmail.com", 
+		"classes": [605,608]
+	 },
+	 	{
+		"name": "Tim", 
+		"type": "Student", 
+		"email": "yoeldirar@gmail.com", 
+		"classes": [605,608]
+	 },
+	 	
+	 	{
+		"name": "Joe", 
+		"type": "Student", 
+		"email": "yoeldirar@gmail.com", 
+		"classes": [605,608]
+	 }
+	
+]

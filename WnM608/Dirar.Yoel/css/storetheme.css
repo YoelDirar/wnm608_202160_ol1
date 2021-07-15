@@ -1,5 +1,5 @@
 :root {
-	--color-offwhite:  #f4f4f4;
+  --color-offwhite:  #f4f4f4;
 
    --color-main-light: #e7f4b8 ;
   --color-main-medium: #b7de2b;
@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color:var(--color-offwhite) ;
+  background-color:var(--color-offwhite) ;
   padding-bottom:  4em;
 
 }
@@ -92,23 +92,23 @@ background-repeat: no-repeat;
 }
   /*Footer*/
   .footer {
-	padding: 3em 5em;
-	text-align: right;
-	background-color: var(--color-neutral-dark);
-	color: var( --color-black:);
-	font-size: 0.75rem;
-	flex-direction: column;
-	flex-wrap: wrap;
+  padding: 3em 5em;
+  text-align: right;
+  background-color: var(--color-neutral-dark);
+  color: var( --color-black:);
+  font-size: 0.75rem;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 
 
 
 
-	.terms-link:hover {
-		text-decoration: underline;
-		color: currentColor;
-	}
+  .terms-link:hover {
+    text-decoration: underline;
+    color: currentColor;
+  }
 
 
 
@@ -123,9 +123,26 @@ background-repeat: no-repeat;
 }
 
 
+.hero_text{
+    text-align: center;
+    margin-bottom: 80px;
+    padding-bottom: 0px;
+    height: 152px;
+    padding-top: 70px;
+
+}
 
 
-
+.buy-button {
+background: #0066A2;
+color: white;
+border-style: outset;
+border-color: #0066A2;
+height: 50px;
+width: 100px;
+font: bold 15px arial, sans-serif;
+text-shadow:none;
+}
 
 
 
