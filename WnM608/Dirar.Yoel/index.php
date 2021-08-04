@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>PlanetPlants</title>
+	<title>PlafdsdaanetPlants</title>
 	
 	<?php include "parts/meta.php"; ?>
 
@@ -44,7 +44,7 @@
 		<!-- .col-xs-6.col-md-3*4>.card>{card} -->
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt=""  class="media-image">
+				<img src="img/bambooPalm.jpeg" alt=""  class="media-image">
 			</div>
 		</div>
 		<div class="col-xs-4 col-md-4">
@@ -92,7 +92,7 @@
 
 			<div class="display-flex flex-align-center">
 			<div class="flex-stretch">
-				<h2>About Planet Plants</h2>
+				<h2>Aboutsdfs Planet Plants</h2>
 				</div>
 				<div clsas="flex-none">
 				

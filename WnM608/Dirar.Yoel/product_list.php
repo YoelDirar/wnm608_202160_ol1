@@ -12,18 +12,30 @@
 	<?php include "parts/navbar.php"; ?>
 <div class="container">
 	
-	<div class="card soft">
+	
 		<h2>Product List </h2>
 
-		<ul>
-			<li><a href="product_item.php?id=1">product 1</a></li>
-			<li><a href="product_item.php?id=2">product 2</a></li>
-			<li><a href="product_item.php?id=3">product 3</a></li>
-			<li><a href="product_item.php?id=4">product 4</a></li>
-		</ul>
-	</div>
+
+	
+<?php
+
+   include_once "lib/php/functions.php"; 
+   include_once  "parts/templates.php";
+
+  $result = makeQuery(
+  	makeConn(),
+  	 "
+  	 SELECT * 
+  	 FROM `Products`
+ 
+  	  "
+  	);
+
+    echo "<div class='productlist grid gap'>", array_reduce($result, 'productListTemplate'),"</div>";
+
+?>
+
 </div>
-<?php include "parts/cards.php"; ?>
 
 <br>
 <?php include "parts/footer.php"; ?>

@@ -116,6 +116,23 @@ background-repeat: no-repeat;
   border-radius: 0.5em;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   overflow: hidden;
+  height:  100%;
+  transistion: all 0.3s;
+}
+
+.figure.product img{
+  height: 100%;
+  object-fit: contain;
+}
+
+.productlist a{
+  text-decoration:  none;
+  font-weight:  inital;
+
+}
+
+.product.figure:hover{
+  box-shadow: 0 2px 15px rgba(0,0,0,0.2);
 }
 
 .product-overlay figcaption{
@@ -145,7 +162,15 @@ text-shadow:none;
 }
 
 
+.images-main img{
+  width: 100%;
+  height: 40vh;
+  object-fit: contain;
+}
 
-
-
+.images-thumbs img{
+  width:  8em;
+  hegith: 6em;
+  object-fit: contain;
+}
 

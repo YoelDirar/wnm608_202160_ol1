@@ -1,6 +1,6 @@
 <script>
   const makeNav = (classes='') =>{
-const links =['<a href="index.php">Home</a>', '<a href="product_list.php">Plants</a>', '<a href="learn.php">Learn</a>' ]
+const links =['<a href="index.php">Home</a>', '<a href="product_list.php">Plants</a>', '<a href="learn.php">Learn</a>','<a href="product_checkout.php">Cart</a>' ]
 let ran =Math.floor(Math.random()*links.length);
 document.write(`
     <div>
