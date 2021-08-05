@@ -12,11 +12,18 @@
 	<?php include "parts/navbar.php"; ?>
 <div class="container">
 	
-	
-		<h2>Product List </h2>
+
+		<div  id="hotdog">
+			<div class="form-control">
+				<form>
+					<input type="search" class="hotdog " placeholder="Search">
+				</form>
+			</div>
+</div>
+<div class="container">
 
 
-	
+	<h2>available Products  </h2>
 <?php
 
    include_once "lib/php/functions.php"; 

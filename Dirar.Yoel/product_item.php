@@ -1,14 +1,14 @@
  <?php 
 
  include_once "lib/php/functions.php"; 
-  
+           
   $product =makeQuery(makeConn(), "SELECT * FROM `Products` WHERE `id` =".$_GET['id'])[0];
 
 
-$images = explode(",", $product->images);
+$images = explode(", ", $product->images);
 
 $image_elements = array_reduce($images, function($r,$o){
-	return $r. "<img src='/img/$o'>";
+	return $r. "<img src='img/$o'>";
 });
  // print_p($product);
   

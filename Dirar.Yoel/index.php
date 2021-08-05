@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>PlafdsdaanetPlants</title>
+	<title>PlanetPlants</title>
 	
 	<?php include "parts/meta.php"; ?>
 
@@ -36,7 +36,7 @@
 </div>
 </div> -->
 
-<div class="view-window" style="background-image:url('img/img1.png')">
+<div class="view-window" style="background-image:url('img/banner.jpeg')">
 	<h1 class="hero_text">Lorem ipsum dolor sit amet,</h1>
 </div>
 <div class="container">
@@ -44,17 +44,17 @@
 		<!-- .col-xs-6.col-md-3*4>.card>{card} -->
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="img/bambooPalm.jpeg" alt=""  class="media-image">
+				<img src="img/bamboo_palm.jpeg" alt=""  class="media-image">
 			</div>
 		</div>
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				<img src="img/red_prayer_plant.png" alt="" class="media-image">
 			</div>
 		</div>
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				<img src="img/kimberly_queen_fern.jpeg" alt="" class="media-image">
 			</div>
 		</div>
 		
