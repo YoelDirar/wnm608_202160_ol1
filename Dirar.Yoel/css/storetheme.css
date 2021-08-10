@@ -1,13 +1,13 @@
 :root {
-  --color-offwhite:  #f4f4f4;
+  --color-Solid-white:  #f0f0f0;
 
-   --color-main-light: #e7f4b8 ;
+   --color-main-light: #EDF9E9;
   --color-main-medium: #b7de2b;
   --color-main-dark: #779117;
 }
 
 body{
-  background-color:var(--color-offwhite) ;
+  background-color:var(--color-Solid-white) ;
   padding-bottom:  4em;
 
 }
@@ -35,6 +35,7 @@ transform:  scale(1.9, 1.9);
 
   .navbar h1 {
     padding-left:  .5em;
+
   }
 }
 @media(max-width: 400px){
@@ -146,11 +147,11 @@ background-repeat: no-repeat;
     padding-bottom: 0px;
     height: 152px;
     padding-top: 70px;
-    color: white;
     font-size: 6em;
-    color: white;
+  color:var(--color-main-medium) ;
+
     font-size: 6em;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 8px 4px  #2C1F16;
 }
 
 
@@ -176,5 +177,19 @@ text-shadow:none;
   width:  8em;
   hegith: 6em;
   object-fit: contain;
+}
+
+/*span.badge:not(::empty)::after {
+  content: ')';
+}
+
+span.badge:not(::empty)::before{
+  content:  '(';
+}*/
+
+.hotdog-light, input{
+      font-size: 2em;
+    border: none;
+    margin-left: 1.5em;
 }
 

@@ -1,14 +1,16 @@
  <?php 
-
  include_once "lib/php/functions.php"; 
   
   $product =makeQuery(makeConn(), "SELECT * FROM `Products` WHERE `id` =".$_GET['id'])[0];
 
-
-
   
- ?>
 
+  $cart_product = cartItemById($_GET['id']);
+ // $cart_product = array_find(getCart(),function($o){return $o-> id==$_GET['id'];}); 
+
+ 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +26,8 @@
 
 	<div class="container">
 		<div class="card soft">
-			<h2> You added <?= $product->product_name ?> to your cart </h2>
+			<h2>You added <?= $product->product_name ?> to your cart </h2>
+		<!-- 	<p>There are now <?= $cart_product->amount ?> of <?= $product->product_name ?> in your cart </p> -->
 
 			<div class="display-flex">
 				<div class="flex-stretch"> <a href="product_list.php">Continue Shoping </a></div>

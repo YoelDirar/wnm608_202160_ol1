@@ -110,6 +110,7 @@ a:hover{
 	.nav a{
 	display:  block;
 	padding:  0.2em 0.5em;
+
 	}
 
 
@@ -199,7 +200,7 @@ color: inherit;
 
 
 .navbar {
-	background-color: var(--color-neutral-dark);
+/*	background-color: #766254;*/
 	color: var(--color-white);
 	line-height: var(--header-height);
 }
@@ -212,6 +213,8 @@ color: inherit;
 
 .navbar a{
 	padding:  0 .5em;
+	color: var(--color-main-medium);
+	
 }
 
 /* CARD */
@@ -227,7 +230,9 @@ color: inherit;
 
 .card.soft{
 	border-radius: 0.5ems;
-	box-shadow:0  0 10px rgba(0,0,0, 0.1);
+	box-shadow:0  0 10px #766254;
+  border:  1px solid #766254;
+
 }
 
 .card.hard{
@@ -343,7 +348,20 @@ color: inherit;
 	
 
 }
-.form-select>select,
+/*.form-select>select{
+	  text-indent: 4em;
+	  background-color:transparent;
+	border-width: 0; 
+padding:  0.5em .2em;
+  color:  inherit;
+  width:  100%;
+  outline: 0;
+  	-webkit-appearance: none;
+}*/
+
+
+
+.form-select>select
 .hotdog input,
 .hotdog,
 .form-button,
@@ -385,12 +403,27 @@ color: inherit;
 /* BUTTONS */
 
 .form-button{
-	background-color:var(--color-neutral-light);
-  border-radius:0.2em;
-  cursor: pointer;
-  text-align: center;
-	padding:  0.5em 0em;
+    background-color: var(--color-neutral-light);
+    border-radius: 0.2em;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em .9em;
+  color: var(--color-neutral-dark);
+    display: inline-block;
+  border: 1px solid #766254;
+    box-shadow: 0 8px 5px 0 rgb(0 0 0 / 5%), 0 6px 5px 0 rgb(0 0 0 / 5%);
+  
 
+}
+
+.form-button.inline {
+	width: initial;
+   border-radius:0.5em;
+  margin: 0 auto;
+  padding-right:2em;
+}
+.form-button.inline:active{
+	background-color:var(--color-main-light);
 }
 
 .form-button:hover{
@@ -402,7 +435,7 @@ color: inherit;
 
 
 .hotdog{
-	background-color:var(--color-neutral-light);
+	background-color:#FEFFFF;
 	border-radius: 2em;
 	padding: 0.8em 0;
 	display: flex;
@@ -421,7 +454,7 @@ color: inherit;
 }
 
 .form-select>select{
-	padding: 0.5em 1.3em;
+	  padding-right:.2em;;
 	background-color: var(--color-neutral-light);
 	border-radius:0.3em;
 	cursor: pointer;
@@ -469,9 +502,6 @@ color: inherit;
 .toggle input:checked +label::after{
 	transform: translateX(1em);
 }
-
-
-
 
 
 
