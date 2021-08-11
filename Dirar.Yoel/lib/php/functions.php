@@ -16,6 +16,10 @@ function file_get_json($filename){
 }
 
 
+
+
+
+
         include_once "auth.php" ;
         function makeConn() {
 
@@ -26,6 +30,14 @@ function file_get_json($filename){
 
         }
 
+        function makePDOConn(){
+            try {
+                $conn = new PDO(...PDOAuth());
+            }catch(PDOException $e) {
+                die($e->getMessage());
+            }
+            return $conn;
+        }
          
           function makeQuery($conn, $qry){
                $result = $conn->query($qry);

@@ -15,14 +15,16 @@
 
 			<div class="display-flex flex-align-center">
 			<div class="flex-stretch">
-				<h2> plant care 101</h2>
+				<h2> About PlanetPlants</h2>
 				</div>
 				<div clsas="flex-none">
 				
 				</div>		
 				 </div>
 			<div class="article-body">
-				<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Delectus fugiat nesciunt harum sequi itaque hic facere explicabo, odit, deleniti nihil recusandae ullam nemo quam, excepturi tempore minima aspernatur mollitia distinctio. Quas hic consequatur eaque ipsam sunt tempora unde quaerat perspiciatis.</p>
+				<p>
+					We serve our customers with beautiful plants which are completely sustainable in our glorious Bay Area climate(s). Specializing in low water and drought tolerant plants from Mediteranian-like and arid regions of the world, we focus on succulents and cacti, rare, BIZARRE, and very unusual plants, along with a few monstrose, caudiciforms, and crests. Thank you all for being a part of our community.
+				</p>
 			
 				
 			</div>
@@ -36,19 +38,19 @@
 		<!-- .col-xs-6.col-md-3*4>.card>{card} -->
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt=""  class="media-image">
+				<img src="img/plant_care.jpeg" alt=""  class="media-image">
 				<a href="product_item">Indoor Plant Care </a></li>
 			</div>
 		</div>
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				<img src="img/Dieffenbachia.jpeg" alt="" class="media-image">
 				<a href="product_item">How-to </a></li>
 			</div>
 		</div>
 		<div class="col-xs-4 col-md-4">
 			<div class="card soft">
-				<img src="https://via.placeholder.com/500" alt="" class="media-image">
+				<img src="img/book.jpg" alt="" class="media-image">
 				<a href="product_item">Books </a></li>
 			</div>
 		</div>

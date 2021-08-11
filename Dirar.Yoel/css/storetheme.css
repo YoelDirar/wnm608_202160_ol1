@@ -189,7 +189,10 @@ span.badge:not(::empty)::before{
 
 .hotdog-light, input{
       font-size: 2em;
-    border: none;
+    border: var(--color-white);
     margin-left: 1.5em;
+       background-color: var(--color-white);
+    color: var(--color-black);
+}
 }
 

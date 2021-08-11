@@ -29,12 +29,11 @@
 <div class="container">
 		<h2>available Products  </h2>
 
-		<div class="form-control" >
+	
 			<form class="hotdog light" id="product-search" >
 				<input type="search" placeholder="Search Plants">
 			</form>
-		</div>
-
+	
 
 		<div class="form-control">
 			<div class="card soft"> 
@@ -48,7 +47,7 @@
 					<button data-filter="category" data-value="pet friendly" type="button" class="form-button">Pet Friendly</button>
 				</div>	
 				<div class="flex-none">
-					<button data-filter="category" data-value="low maintaince" type="button" class="form-button">Low Maintaince </button>
+					<button data-filter="category" data-value="low maintenance" type="button" class="form-button">Low Maintenance </button>
 				</div>
 
 	     </div>

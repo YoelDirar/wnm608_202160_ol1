@@ -22,7 +22,7 @@ $empty_user = (object)[
 ];
 
 
-// print_p([$_GET,$_POST]);
+//print_p([$_GET,$_POST]);
 
 if(isset($_GET['action'])){
  	switch ($_GET['action']){
@@ -174,15 +174,12 @@ HTML;
 
 
      		if(isset($_GET['id'])){
-     			showUserPage($_GET['id'] == "new" ? $empty_user :  $users[$_GET['id']]);
+     			// showUserPage();
      		
      		}else{
 
-
-     	
-
      		 ?>
-			<h2>User List</h2>
+			<h2>Product List</h2>
 		
 		<nav class="nav">
 			<ul>
