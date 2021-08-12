@@ -6,7 +6,7 @@ $(".productlist").html(
 	'No Results');
 
 }
-query({type:"products_all"}).then(showResults); 
+query({type:'products_all'}).then(showResults); 
 
 $(()=>{
 

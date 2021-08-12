@@ -6,7 +6,7 @@
 
  switch ($_GET['action']){
     case "add-to-cart":
-    	$product =makeQuery(makeConn(), "SELECT * FROM `Products` WHERE `id` =".$_POST['product-id'])[0];
+    	$product =makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =".$_POST['product-id'])[0];
     	addToCart($_POST['product-id'],$_POST['product-amount'],$_POST['product-color']);
        header("location:product_added_to_cart.php?id={$_POST['product-id']}");
        break;

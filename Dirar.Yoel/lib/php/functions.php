@@ -102,13 +102,14 @@ function getCartItems() {
     if(empty($cart))return [];
 
     $ids = implode(",", array_map(function($o){return $o->id;}, $cart));
-    $data = makeQuery(makeConn(),"SELECT * FROM `Products` WHERE `id` IN ($ids)");
+    $data = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` IN ($ids)");
 
 
 
     return array_map(function($o) use ($cart) {
         $p = cartItemById($o-> id);
         $o->amount = $p->amount;
+        
         $o->total = $p->amount * $o->price;
         return $o;
     },$data);

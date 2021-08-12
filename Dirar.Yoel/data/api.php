@@ -20,7 +20,7 @@ $data = json_decode(file_get_contents("php://input"));
 	 
 case "product_search": 
 	 $output['result'] = makeQuery(makeConn(),"SELECT * 
- 		FROM `Products`
+ 		FROM `products`
  		WHERE 
  			`product_name` LIKE '%$data->search%' OR
  			`description` LIKE '%$data->search%' OR
@@ -31,7 +31,7 @@ case "product_search":
 
  case "product_filter": 
 	 $output['result'] = makeQuery(makeConn(),"SELECT * 
- 		FROM `Products`
+ 		FROM `products`
  		WHERE `$data->column` LIKE '$data->value'
  		ORDER BY `date_create` DESC
  		 LIMIT 12");
@@ -39,7 +39,7 @@ case "product_search":
 
 	 case "product_sort": 
 	 $output['result'] = makeQuery(makeConn(),"SELECT * 
- 		FROM `Products`
+ 		FROM `products`
  		ORDER BY `$data->column` $data->dir
  		 LIMIT 12");
 	 break;

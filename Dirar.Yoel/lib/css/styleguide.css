@@ -218,6 +218,11 @@ color: inherit;
 }
 
 /* CARD */
+
+[class*="col-"]>.card{
+	height: 100%:
+	margin: 0;
+}
 .card{
 	background-color:  var(--color-white);
 	margin-top: 1em;

@@ -1,14 +1,15 @@
  <?php 
 
  include_once "lib/php/functions.php"; 
+  include_once "parts/templates.php"; 
            
-  $product =makeQuery(makeConn(), "SELECT * FROM `Products` WHERE `id` =".$_GET['id'])[0];
+  $product =makeQuery(makeConn(), "SELECT * FROM `products` WHERE `id` =".$_GET['id'])[0];
 
 
 $images = explode(", ", $product->images);
 
 $image_elements = array_reduce($images, function($r,$o){
-	return $r. "<img src='img/$o'>";
+	return $r. "<img src='$o'>";
 });
  // print_p($product);
   
@@ -33,10 +34,10 @@ $image_elements = array_reduce($images, function($r,$o){
 		<div class="col-xs-12 col-md-7">
 			<div class="card soft">
 				<div class="images-main">
-				      <img src= "img/<?= $product->thumbnail ?>">
+				      <img src= "<?= $product->thumbnail ?>">
 				</div>
 				<div class="images-thumbs">
-			       <?=	$image_elements ?> 
+			       <? $image_elements ?> 
 				</div>
 			</div>
 		</div>
@@ -48,6 +49,7 @@ $image_elements = array_reduce($images, function($r,$o){
 
 		<div class="card-section">
 		    <h2 class="product-name"><?= $product->product_name ?></h2>
+		    <h2 class="product-category"><?= $product->category ?></h2>
 		    <div class="product-price">&dollar;<?= $product->price ?></h2></div>
 	       </div>
 
@@ -92,11 +94,20 @@ $image_elements = array_reduce($images, function($r,$o){
 	</div>	
 
 	
-</div>	
 	
-<div class="card soft light">
+	
+	<div class="card soft light">
 		<p><?= $product->description ?></p>
+
 	</div>
+
+	<h2>RECOMMENDED PRODUCTS</h2>
+	<?php
+
+		recommendedSimilar($product->category,$product->id);
+	?>
+
+</div>
 
 </body>
 </html>
