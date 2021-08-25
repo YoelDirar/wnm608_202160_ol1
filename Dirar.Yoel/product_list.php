@@ -27,65 +27,59 @@ include_once "parts/templates.php";
 
 <!--------search----------->
 	
-			<form class="hotdog light" id="product-search" >
-				<input type="search" placeholder="Search">
-			</form>
-	<!------------- FILTER BUTTONS & SORT SIDE BY SIDE -------------------->
-
-<!-- 		<div class="form-control display-flex filternsort">
-			<div class="card soft"> 
-				<div class="display-flex">
-			<div class="flex-stretch display-flex">
-		
-				<div class="flex-none">
-					<button data-filter="category" data-value="" type="button"  class="form-button">All</button>
-				 </div>
-					<div class="flex-none">
-					<button data-filter="category" data-value="pet friendly" type="button" class="form-button">Pet Friendly</button>
-				</div>	
-				<div class="flex-none">
-					<button data-filter="category" data-value="low maintenance" type="button" class="form-button">Low Maintenance </button>
-				</div>
-
-	     </div>
-		<div class="flex-none">
-			<div class="form-select">
-           <select class="js-sort">
-				         <option value="1">Newest</option>
-				         <option value="2">Oldest</option>
-				           <option value="3">Least Expensive</option>
-				         <option value="4">Most Expensive </option>
-				    
-			      </select>
-			  </div>				
-		</div>
-	</div>
-	</div>
+<div class="search-box" id="product-search" >
+	<form class="search-box" id="product-search">
+  <input class="search-input" type="text" placeholder="Search something..">
+  <button-search class="search-btn"><i class="fas fa-search"></i></button>
+</div>
 
 
 
 
+			<!-- <div class="box">
+				<form class="search-box" id="product-search">
+					
+					<input type="search" placeholder="What are you looking for?">
+					<button-search class="search-btn"><i class="fas fa-search"></i></button>
+				</form>
+			</div> -->
+<!------------- FILTER BUTTONS & SORT SIDE BY SIDE -------------------->
 
-</body>
-</html> -->
+
 	<div class="form-control display-flex filternsort">
 			<div class="card soft"> 
 				<div class="display-flex">
 			<div class="flex-stretch display-flex">
 		
 				<div class="flex-none">
-					<button data-filter="category" data-value="" type="button"  class="form-button">All</button>
-				 </div>
-					<div class="flex-none">
-					<button data-filter="category" data-value="pet friendly" type="button" class="form-button">Pet Friendly</button>
-				</div>	
+					<button data-filter="category" data-value="" type="button"  class="button">All
+                   	  <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
+              </div>
+
 				<div class="flex-none">
-					<button data-filter="category" data-value="low maintenance" type="button" class="form-button">Low Maintenance </button>
+					<button data-filter="category" data-value="pet friendly" type="button" class="button">Pet Friendly
+					   	<span></span>
+                        <span></span>
+        				<span></span>
+        				<span></span>
+        			</button>
+				 </div>
+
+				<div class="flex-none">
+					<button data-filter="category" data-value="low maintenance" type="button" class="button">Low Maintenance
+					    <span></span>
+      					<span></span>
+        				<span></span>
+       					<span></span> </button>
 				</div>
 
 	     </div>
 		<!-- dropdown menu sort -->
-				<div class="form-select sort">	
+				<div class="box">	
 					<select class="js-sort">
 						<option value="1">Newest</option>
 						<option value="2">Oldest</option>

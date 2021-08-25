@@ -187,12 +187,12 @@ span.badge:not(::empty)::before{
   content:  '(';
 }*/
 
-.hotdog-light, input{
+/*.hotdog-light, input{
       font-size: 2em;
     border: var(--color-white);
     margin-left: 1.5em;
        background-color: var(--color-white);
     color: var(--color-black);
-}
+}*/
 }
 
